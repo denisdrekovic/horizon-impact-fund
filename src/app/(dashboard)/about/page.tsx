@@ -1,7 +1,8 @@
 "use client";
 
 import Card from "@/components/ui/Card";
-import { Info, Database, BarChart3, Code2 } from "lucide-react";
+import { Info, Database, BarChart3, Code2, AlertTriangle } from "lucide-react";
+import Image from "next/image";
 
 const METRIC_DEFINITIONS = [
   {
@@ -72,6 +73,65 @@ export default function AboutPage() {
           About This Dashboard
         </h1>
       </div>
+
+      {/* Disclaimer */}
+      <Card>
+        <div
+          className="flex items-start gap-3 p-4 rounded-lg mb-4"
+          style={{
+            background: "var(--color-surface-2)",
+            border: "1px solid var(--status-attention)",
+          }}
+        >
+          <AlertTriangle
+            size={20}
+            style={{ color: "var(--status-attention)", flexShrink: 0, marginTop: 2 }}
+          />
+          <div>
+            <p
+              className="text-sm font-bold mb-1"
+              style={{ color: "var(--text-primary)" }}
+            >
+              Disclaimer
+            </p>
+            <p
+              className="text-xs leading-relaxed"
+              style={{ color: "var(--text-secondary)" }}
+            >
+              This dashboard has been altered from its original state and contains
+              mock data for demonstration purposes only. All company names, financial
+              figures, impact metrics, and other data points are entirely fictitious
+              and do not represent real investments or outcomes. This dashboard is
+              intended solely as a product demonstration and should not be used for
+              investment decisions or reporting.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-4">
+          <Image
+            src="/idi-logo.svg"
+            alt="Institute for Development Impact"
+            width={160}
+            height={40}
+            style={{ height: "auto" }}
+          />
+          <div>
+            <p
+              className="text-sm font-semibold"
+              style={{ color: "var(--text-primary)" }}
+            >
+              Built by the Institute for Development Impact (I4DI)
+            </p>
+            <p
+              className="text-xs"
+              style={{ color: "var(--text-tertiary)" }}
+            >
+              Data systems, impact measurement, and analytics for international development.
+            </p>
+          </div>
+        </div>
+      </Card>
 
       {/* Dashboard overview */}
       <Card>
