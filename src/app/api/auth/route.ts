@@ -9,23 +9,6 @@ interface UserEntry {
   role: AuthRole;
 }
 
-const loginAttempts = new Map<
-  string,
-  { count: number; resetAt: number }
->();
-const MAX_ATTEMPTS = 8;
-const WINDOW_MS = 15 * 60 * 1000;
-
-function checkRateLimit(ip: string): boolean {
-  const now = Date.now();
-  const entry = loginAttempts.get(ip);
-  if (!entry || now > entry.resetAt) {
-    loginAttempts.set(ip, { count: 1, resetAt: now + WINDOW_MS });
-    return true;
-  }
-  entry.count++;
-  return entry.count <= MAX_ATTEMPTS;
-}
 
 function parseUsers(): Map<string, UserEntry> {
   const raw = process.env.AUTH_USERS ?? "";
@@ -51,18 +34,6 @@ function safeEqual(a: string, b: string): boolean {
 }
 
 export async function POST(req: NextRequest) {
-  const ip =
-    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
-  if (!checkRateLimit(ip)) {
-    return NextResponse.json(
-      {
-        success: false,
-        error: "Too many login attempts. Try again in 15 minutes.",
-      },
-      { status: 429 }
-    );
-  }
-
   const { username, password } = await req.json();
   if (!username || !password) {
     return NextResponse.json(
