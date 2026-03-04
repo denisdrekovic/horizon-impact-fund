@@ -250,7 +250,7 @@ export default function AboutPage() {
                 border: "1px solid var(--card-border)",
               }}
             >
-              1.0.0
+              2.0.1
             </span>
           </div>
           <p
