@@ -1,0 +1,445 @@
+{
+  "id": "maji-solutions",
+  "name": "Maji Solutions",
+  "country": "Kenya",
+  "countryCode": "KE",
+  "sector": "wash",
+  "sectorCategory": "essential-services",
+  "coordinates": [
+    36.82,
+    -1.29
+  ],
+  "stage": "early-growth",
+  "status": "on-track",
+  "investmentDate": "2023-06-01",
+  "investmentAmount": 2500000,
+  "capitalCalled": 2500000,
+  "currentValuation": 3250000,
+  "distributions": 0,
+  "irr": 11.8,
+  "revenueGrowth": 54,
+  "timeSeries": {
+    "periods": [
+      "H1 2023",
+      "H2 2023",
+      "H1 2024",
+      "H2 2024",
+      "H1 2025",
+      "H2 2025"
+    ],
+    "revenue": [
+      320,
+      390,
+      510,
+      650,
+      830,
+      960
+    ],
+    "valuation": [
+      2500,
+      2620,
+      2780,
+      2920,
+      3100,
+      3250
+    ],
+    "peopleReached": [
+      3200,
+      5900,
+      10600,
+      15100,
+      22400,
+      26400
+    ],
+    "jobsCreated": [
+      12,
+      17,
+      26,
+      35,
+      48,
+      55
+    ],
+    "primaryOutcome": {
+      "label": "Waterborne Disease Reduction (%)",
+      "values": [
+        8,
+        13,
+        20,
+        28,
+        37,
+        42
+      ],
+      "unit": "%",
+      "target": 50
+    },
+    "secondaryOutcome": {
+      "label": "Time Saved in Water Collection (hrs/day)",
+      "values": [
+        0.8,
+        1.1,
+        1.4,
+        1.7,
+        2.1,
+        2.2
+      ],
+      "unit": "hrs/day",
+      "target": 2.5
+    }
+  },
+  "peopleReached": 26400,
+  "householdsReached": 5867,
+  "jobsCreated": 55,
+  "womenBeneficiaryPct": 58,
+  "co2Avoided": null,
+  "peopleReachedDefinition": "Direct count of unique individuals registered at Maji water points who gained new access to clean water. Equals the 'Individuals Gaining Water Access' output indicator \u2014 a direct 1:1 mapping with no multiplier applied.",
+  "householdsReachedDefinition": "Estimated as people reached (26,400) / average household size of 4.5 persons = 5,867, based on Kenya DHS 2022 data. Represents unique households gaining access to clean water.",
+  "jobsCreatedDefinition": "Full-time equivalent (FTE) jobs directly created by Maji Solutions: 25 installation and plumbing technicians, 18 maintenance and operations staff, 12 community outreach workers. Verified through payroll records.",
+  "disaggregation": {
+    "peopleReached": {
+      "byRegion": [
+        {
+          "name": "Nairobi County",
+          "female": 6612,
+          "male": 4788
+        },
+        {
+          "name": "Mombasa County",
+          "female": 4988,
+          "male": 3612
+        },
+        {
+          "name": "Kisumu County",
+          "female": 3712,
+          "male": 2688
+        }
+      ]
+    },
+    "jobsCreated": {
+      "byType": [
+        {
+          "name": "Installation & Plumbing",
+          "female": 10,
+          "male": 15
+        },
+        {
+          "name": "Maintenance & Operations",
+          "female": 8,
+          "male": 10
+        },
+        {
+          "name": "Community Outreach",
+          "female": 7,
+          "male": 5
+        }
+      ]
+    }
+  },
+  "outputs": [
+    {
+      "id": "wash_facilities",
+      "label": "WASH Facilities Installed",
+      "fullName": "Water, Sanitation & Hygiene Facilities Installed (IRIS+ PD3668)",
+      "value": 145,
+      "unit": "facilities",
+      "target": 180,
+      "period": "H2 2025",
+      "values": [
+        18,
+        38,
+        62,
+        88,
+        120,
+        145
+      ],
+      "methodology": "Cumulative count of commissioned water kiosks, boreholes, and sanitation blocks since inception",
+      "source": "Commissioning reports and GPS-verified field audits",
+      "type": "output"
+    },
+    {
+      "id": "water_access",
+      "label": "Individuals Gaining Water Access",
+      "fullName": "Individuals Gaining New Access to Clean Water (IRIS+ PI4060)",
+      "value": 26400,
+      "unit": "individuals",
+      "target": 30000,
+      "period": "H2 2025",
+      "values": [
+        3200,
+        5900,
+        10600,
+        15100,
+        22400,
+        26400
+      ],
+      "methodology": "Unique individuals registered at water points via smart card system, counted at first access event",
+      "source": "Smart card registration database",
+      "type": "output"
+    },
+    {
+      "id": "service_hours",
+      "label": "Service Hours of Water",
+      "fullName": "Daily Hours of Clean Water Service Provided (IRIS+ PI5683)",
+      "value": 18500,
+      "unit": "hours/day",
+      "target": 22000,
+      "period": "H2 2025",
+      "values": [
+        2200,
+        4800,
+        8200,
+        11600,
+        15400,
+        18500
+      ],
+      "methodology": "Sum of operational hours per day across all active facilities, measured via IoT flow sensors",
+      "source": "IoT monitoring platform, daily average over last reporting period",
+      "type": "output"
+    },
+    {
+      "id": "households_reached",
+      "label": "Households Reached",
+      "fullName": "Number of unique households with new or improved water and sanitation access",
+      "value": 5867,
+      "unit": "households",
+      "target": 6700,
+      "period": "H2 2025",
+      "values": [
+        711,
+        1311,
+        2356,
+        3356,
+        4978,
+        5867
+      ],
+      "methodology": "Derived from individuals with water access divided by average household size of 4.5 persons (Kenya census data)",
+      "source": "Project registration data and Kenya census",
+      "type": "output"
+    },
+    {
+      "id": "jobs_created",
+      "label": "Jobs Created",
+      "fullName": "Direct full-time equivalent jobs created through Maji Solutions operations",
+      "value": 55,
+      "unit": "FTE jobs",
+      "target": 70,
+      "period": "H2 2025",
+      "values": [
+        12,
+        17,
+        26,
+        35,
+        48,
+        55
+      ],
+      "methodology": "Count of full-time equivalent positions, verified quarterly through payroll records",
+      "source": "Company payroll records",
+      "type": "output"
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "disease_reduction",
+      "label": "Waterborne Disease Reduction",
+      "fullName": "Reduction in Waterborne Disease Incidence in Service Areas",
+      "value": 42,
+      "unit": "%",
+      "target": 50,
+      "period": "H2 2025",
+      "values": [
+        8,
+        13,
+        20,
+        28,
+        37,
+        42
+      ],
+      "methodology": "Compared health clinic admission data for waterborne diseases in Maji service areas vs matched control areas without Maji facilities",
+      "source": "County health facility records, semi-annual analysis",
+      "type": "outcome"
+    },
+    {
+      "id": "time_saved",
+      "label": "Time Saved in Water Collection",
+      "fullName": "Average Daily Time Saved on Water Collection per Household",
+      "value": 2.2,
+      "unit": "hrs/day",
+      "target": 2.5,
+      "period": "H2 2025",
+      "values": [
+        0.8,
+        1.1,
+        1.4,
+        1.7,
+        2.1,
+        2.2
+      ],
+      "methodology": "Household time-use surveys at baseline (pre-installation) and endline, sample of 300 households per county",
+      "source": "Endline household survey (n=900)",
+      "type": "outcome"
+    },
+    {
+      "id": "water_quality",
+      "label": "Water Quality Standards Met",
+      "fullName": "Percentage of Facilities Meeting WHO Water Quality Standards",
+      "value": 94,
+      "unit": "%",
+      "target": 98,
+      "period": "H2 2025",
+      "values": [
+        82,
+        85,
+        88,
+        90,
+        92,
+        94
+      ],
+      "methodology": "Quarterly water quality testing against WHO Guidelines for Drinking-water Quality (turbidity, E. coli, pH, chlorine residual)",
+      "source": "Third-party laboratory testing reports",
+      "type": "outcome"
+    },
+    {
+      "id": "women_pct",
+      "label": "Women Beneficiary %",
+      "fullName": "Percentage of total beneficiaries who are female",
+      "value": 58,
+      "unit": "%",
+      "target": 55,
+      "period": "H2 2025",
+      "values": [
+        54,
+        55,
+        56,
+        57,
+        57,
+        58
+      ],
+      "methodology": "Calculated from sex-disaggregated beneficiary registration data",
+      "source": "Project beneficiary database",
+      "type": "outcome"
+    }
+  ],
+  "financials": [
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "fullName": "Semi-annual gross revenue from water service fees, installation charges, and maintenance contracts",
+      "value": 960,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [320, 390, 510, 650, 830, 960],
+      "methodology": "Gross revenue on accrual basis per IFRS 15. Includes water service fees from pay-per-use smart card transactions, installation charges for new water points, and recurring maintenance contracts with community operators.",
+      "source": "Audited financial statements and management accounts"
+    },
+    {
+      "id": "valuation",
+      "label": "Valuation",
+      "fullName": "Fair market value of the fund's equity position",
+      "value": 3250,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [2500, 2620, 2780, 2920, 3100, 3250],
+      "methodology": "Fair market value via DCF and comparable transactions.",
+      "source": "Independent valuation report and management estimate"
+    },
+    {
+      "id": "investment_amount",
+      "label": "Capital Deployed",
+      "fullName": "Total committed capital called and deployed",
+      "value": 2500,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [833, 1667, 2500, 2500, 2500, 2500],
+      "methodology": "Cumulative capital called from LPs.",
+      "source": "Fund administrator capital call records"
+    },
+    {
+      "id": "irr",
+      "label": "IRR",
+      "fullName": "Gross internal rate of return",
+      "value": 11.8,
+      "unit": "%",
+      "target": 15,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [-2.0, 3.5, 6.2, 8.5, 10.4, 11.8],
+      "methodology": "XIRR per GIPS standards.",
+      "source": "Fund administrator performance report"
+    },
+    {
+      "id": "moic",
+      "label": "MOIC",
+      "fullName": "Multiple on invested capital",
+      "value": 1.30,
+      "unit": "x",
+      "target": 2.0,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [1.00, 1.05, 1.11, 1.17, 1.24, 1.30],
+      "methodology": "MOIC = (FMV + Distributions) / Capital Called.",
+      "source": "Fund administrator performance report"
+    },
+    {
+      "id": "dpi",
+      "label": "DPI",
+      "fullName": "Distributions to paid-in capital",
+      "value": 0.00,
+      "unit": "x",
+      "target": 0.5,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [0.00, 0.00, 0.00, 0.00, 0.00, 0.00],
+      "methodology": "DPI = Distributions / Capital Called.",
+      "source": "Fund administrator distribution records"
+    },
+    {
+      "id": "revenue_growth",
+      "label": "Revenue Growth",
+      "fullName": "Year-over-year revenue growth rate",
+      "value": 54,
+      "unit": "%",
+      "target": 30,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [null, null, 59, 67, 63, 48],
+      "methodology": "YoY growth rate.",
+      "source": "Management accounts"
+    }
+  ],
+  "sdgAlignment": [
+    6,
+    3,
+    5,
+    8
+  ],
+  "scores": {
+    "financial": 3,
+    "impact": 4,
+    "operational": 3,
+    "esg": 4
+  },
+  "profile": {
+    "description": "Maji Solutions designs, installs, and maintains decentralized water treatment and sanitation systems serving peri-urban and rural communities across Kenya. Operating in Nairobi County, Mombasa County, and Kisumu County, the company partners with local entrepreneurs through a franchise model to manage water kiosks and sanitation service points.",
+    "theoryOfChange": "By providing reliable access to safe, affordable drinking water through community-level water treatment systems, Maji reduces waterborne disease incidence, decreases time spent collecting water (especially for women and girls), and improves overall household health and economic productivity. Clean water access enables school attendance and reduces healthcare expenditure.",
+    "tocImage": "/images/toc/maji-solutions.svg",
+    "tocLevels": [
+      { "label": "Inputs", "color": "#428BF9", "items": ["Investment Capital", "Engineering Expertise", "Community Engagement"] },
+      { "label": "Activities", "color": "#034BE4", "items": ["Water Point Construction", "Treatment Systems", "Hygiene Education"] },
+      { "label": "Outputs", "color": "#FF9705", "items": ["Water Points Built", "Systems Installed", "Communities Trained"] },
+      { "label": "Outcomes", "color": "#3DD29D", "items": ["Clean Water Access", "Reduced Waterborne Disease", "Time Savings"] },
+      { "label": "Impact", "color": "#E05297", "items": ["Public Health", "Gender Equality", "Economic Development"] }
+    ],
+    "targetBeneficiaries": "Low-income peri-urban and rural communities lacking reliable piped water access in Nairobi County, Mombasa County, and Kisumu County, with particular focus on women and children who bear the primary burden of water collection.",
+    "geographicFocus": "Nairobi County, Mombasa County, and Kisumu County, Kenya. 38 operational water points across 3 counties.",
+    "implementationApproach": "Franchise model: Maji designs and installs water treatment systems in coordination with county water service boards under Kenya's Water Act, then partners with local entrepreneurs to operate water kiosks. Revenue is collected via M-Pesa mobile money. IoT sensors monitor water quality and system performance remotely.",
+    "reportingFrequency": "Semi-annual (H1/H2), with monthly water quality testing reports shared with regional health authorities and quarterly impact updates to investors.",
+    "contactName": "Joseph Ndaro",
+    "contactRole": "Founder & CEO",
+    "contactEmail": "j.ndaro@majisolutions.co.ke"
+  }
+}

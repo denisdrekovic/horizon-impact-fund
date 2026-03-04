@@ -1,0 +1,204 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: var(--font-poppins), "Poppins", system-ui, sans-serif;
+  --font-sans: var(--font-poppins), "Poppins", system-ui, sans-serif;
+  --radius-card: 0.75rem;
+  --radius-card-lg: 1rem;
+  --radius-button: 0.625rem;
+  --sidebar-width: 240px;
+  --sidebar-collapsed-width: 64px;
+  --topbar-height: 56px;
+  --detail-panel-width: 420px;
+}
+
+/* ── Chart palette (constant across themes) ── */
+:root {
+  --chart-1: #FF9705;
+  --chart-2: #062A74;
+  --chart-3: #034BE4;
+  --chart-4: #428BF9;
+  --chart-5: #3DD29D;
+  --chart-6: #E05297;
+  --semantic-pos: #3DD29D;
+  --semantic-neg: #FF5005;
+}
+
+/* ── Light theme (default) ── */
+:root {
+  --color-surface-0: #FFFFFF;
+  --color-surface-1: #FFFFFF;
+  --color-surface-2: #F8FAFF;
+  --color-surface-3: #E0EAFF;
+  --card-bg: #FFFFFF;
+  --card-bg-hover: #F8FAFF;
+  --card-border: rgba(6, 42, 116, 0.08);
+  --card-border-hover: rgba(6, 42, 116, 0.15);
+  --text-primary: #062A74;
+  --text-secondary: #707787;
+  --text-tertiary: #9CA3B0;
+  --color-accent: #034BE4;
+  --color-accent-light: rgba(3, 75, 228, 0.08);
+  --shadow-card: 0 2px 8px rgba(6, 42, 116, 0.04);
+  --shadow-card-hover: 0 6px 20px rgba(6, 42, 116, 0.08);
+  --shadow-tooltip: 0 8px 30px rgba(6, 42, 116, 0.12);
+
+  --status-outperforming: #3DD29D;
+  --status-on-track: #428BF9;
+  --status-needs-attention: #FF5005;
+
+  --sidebar-bg: #062A74;
+  --sidebar-text: #FFFFFF;
+  --sidebar-text-muted: rgba(255, 255, 255, 0.6);
+  --sidebar-border: rgba(255, 255, 255, 0.10);
+  --sidebar-active-bg: rgba(255, 255, 255, 0.12);
+  --sidebar-hover-bg: rgba(255, 255, 255, 0.08);
+
+  --input-bg: #FFFFFF;
+  --input-border: rgba(6, 42, 116, 0.12);
+  --input-border-focus: var(--color-accent);
+
+  --badge-muted-bg: rgba(6, 42, 116, 0.06);
+  --badge-muted-text: var(--text-secondary);
+
+  --scrollbar-thumb: rgba(6, 42, 116, 0.12);
+  --scrollbar-track: transparent;
+}
+
+/* ── Dark theme ── */
+.dark {
+  --color-surface-0: #0A1628;
+  --color-surface-1: #111D33;
+  --color-surface-2: #182640;
+  --color-surface-3: #1F304D;
+  --card-bg: rgba(17, 29, 51, 0.85);
+  --card-bg-hover: rgba(17, 29, 51, 0.95);
+  --card-border: rgba(182, 205, 255, 0.10);
+  --card-border-hover: rgba(182, 205, 255, 0.20);
+  --text-primary: #E8EEFF;
+  --text-secondary: rgba(232, 238, 255, 0.65);
+  --text-tertiary: rgba(232, 238, 255, 0.45);
+  --color-accent: #428BF9;
+  --color-accent-light: rgba(66, 139, 249, 0.12);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.20);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.30);
+  --shadow-tooltip: 0 8px 30px rgba(0, 0, 0, 0.40);
+
+  --status-outperforming: #3DD29D;
+  --status-on-track: #428BF9;
+  --status-needs-attention: #FF5005;
+
+  --sidebar-bg: #0A1628;
+  --sidebar-text: #E8EEFF;
+  --sidebar-text-muted: rgba(232, 238, 255, 0.50);
+  --sidebar-border: rgba(182, 205, 255, 0.08);
+  --sidebar-active-bg: rgba(66, 139, 249, 0.15);
+  --sidebar-hover-bg: rgba(182, 205, 255, 0.06);
+
+  --input-bg: #182640;
+  --input-border: rgba(182, 205, 255, 0.12);
+  --input-border-focus: var(--color-accent);
+
+  --badge-muted-bg: rgba(182, 205, 255, 0.08);
+  --badge-muted-text: var(--text-secondary);
+
+  --scrollbar-thumb: rgba(182, 205, 255, 0.15);
+  --scrollbar-track: transparent;
+}
+
+/* ── Base styles ── */
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+    background-color: var(--color-surface-0);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  }
+}
+
+/* ── Brand card utility ── */
+@layer components {
+  .brand-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .brand-card-hover:hover {
+    box-shadow: var(--shadow-card-hover);
+    border-color: var(--card-border-hover);
+  }
+
+  .brand-card-title {
+    background: var(--color-surface-3);
+    padding: 0.625rem 1rem;
+    border-radius: var(--radius-card) var(--radius-card) 0 0;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .brand-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .brand-badge-green {
+    background: rgba(61, 210, 157, 0.12);
+    color: #3DD29D;
+  }
+
+  .brand-badge-blue {
+    background: rgba(66, 139, 249, 0.12);
+    color: #428BF9;
+  }
+
+  .brand-badge-orange {
+    background: rgba(255, 80, 5, 0.12);
+    color: #FF5005;
+  }
+
+  .brand-badge-amber {
+    background: rgba(255, 151, 5, 0.12);
+    color: #FF9705;
+  }
+}
+
+/* ── Map marker permanent labels ── */
+.map-marker-label {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border: 1px solid rgba(6, 42, 116, 0.12) !important;
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+  box-shadow: 0 2px 8px rgba(6, 42, 116, 0.10) !important;
+  white-space: nowrap !important;
+}
+.map-marker-label::before {
+  border-top-color: rgba(6, 42, 116, 0.12) !important;
+}
+.dark .map-marker-label {
+  background: rgba(17, 29, 51, 0.92) !important;
+  border-color: rgba(182, 205, 255, 0.15) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.30) !important;
+}
+.dark .map-marker-label span {
+  color: #E8EEFF !important;
+}

@@ -1,0 +1,465 @@
+{
+  "id": "umuganda-health",
+  "name": "Umuganda Health",
+  "country": "Rwanda",
+  "countryCode": "RW",
+  "sector": "healthcare",
+  "sectorCategory": "essential-services",
+  "coordinates": [
+    29.87,
+    -1.94
+  ],
+  "stage": "series-a",
+  "status": "needs-attention",
+  "investmentDate": "2023-07-01",
+  "investmentAmount": 1900000,
+  "capitalCalled": 1900000,
+  "currentValuation": 1995000,
+  "distributions": 0,
+  "irr": 3.8,
+  "revenueGrowth": 27,
+  "timeSeries": {
+    "periods": [
+      "H1 2023",
+      "H2 2023",
+      "H1 2024",
+      "H2 2024",
+      "H1 2025",
+      "H2 2025"
+    ],
+    "revenue": [
+      180,
+      205,
+      225,
+      250,
+      285,
+      320
+    ],
+    "valuation": [
+      1900,
+      1910,
+      1935,
+      1945,
+      1970,
+      1995
+    ],
+    "peopleReached": [
+      1200,
+      2500,
+      4200,
+      5800,
+      7900,
+      9800
+    ],
+    "jobsCreated": [
+      12,
+      17,
+      23,
+      30,
+      37,
+      45
+    ],
+    "primaryOutcome": {
+      "label": "Maternal Mortality Reduction (%)",
+      "values": [
+        2,
+        4,
+        8,
+        12,
+        17,
+        22
+      ],
+      "unit": "%",
+      "target": 35
+    },
+    "secondaryOutcome": {
+      "label": "Patient Satisfaction (NPS)",
+      "values": [
+        42,
+        46,
+        50,
+        54,
+        59,
+        61
+      ],
+      "unit": "NPS",
+      "target": 70
+    }
+  },
+  "peopleReached": 9800,
+  "householdsReached": 6533,
+  "jobsCreated": 45,
+  "womenBeneficiaryPct": 68,
+  "co2Avoided": null,
+  "peopleReachedDefinition": "Unique patients served across all clinic locations, deduplicated by patient registration number. While total visits are 24,500 annually, many patients make multiple visits \u2014 9,800 represents unique individuals who received care.",
+  "householdsReachedDefinition": "Estimated as unique patients (9,800) divided by average patients per household (1.5) = 6,533 households. Based on patient registry analysis cross-referenced with household health survey data.",
+  "jobsCreatedDefinition": "Full-time equivalent (FTE) jobs directly created by Umuganda Health: 22 nurses and clinicians, 15 community health workers, 8 administrative and support staff. Verified through Ministry of Health registration and payroll.",
+  "disaggregation": {
+    "peopleReached": {
+      "byRegion": [
+        {
+          "name": "Kigali",
+          "female": 2856,
+          "male": 1344
+        },
+        {
+          "name": "Eastern Province",
+          "female": 2312,
+          "male": 1088
+        },
+        {
+          "name": "Southern Province",
+          "female": 1496,
+          "male": 704
+        }
+      ]
+    },
+    "jobsCreated": {
+      "byType": [
+        {
+          "name": "Nurses & Clinicians",
+          "female": 16,
+          "male": 6
+        },
+        {
+          "name": "Community Health Workers",
+          "female": 11,
+          "male": 4
+        },
+        {
+          "name": "Admin & Support",
+          "female": 5,
+          "male": 3
+        }
+      ]
+    }
+  },
+  "outputs": [
+    {
+      "id": "patient_visits",
+      "label": "Patient Visits Annually",
+      "fullName": "Total Patient Visits Across All Clinic Locations",
+      "value": 24500,
+      "unit": "visits",
+      "target": 35000,
+      "period": "H2 2025",
+      "values": [
+        3200,
+        7500,
+        12000,
+        16500,
+        21000,
+        24500
+      ],
+      "methodology": "Cumulative patient visit count from electronic health records across all 8 clinic locations for the trailing 12-month period",
+      "source": "OpenMRS electronic health records system",
+      "type": "output"
+    },
+    {
+      "id": "workers_trained",
+      "label": "Healthcare Workers Trained",
+      "fullName": "Community Health Workers Trained and Certified",
+      "value": 128,
+      "unit": "workers",
+      "target": 200,
+      "period": "H2 2025",
+      "values": [
+        15,
+        32,
+        55,
+        78,
+        105,
+        128
+      ],
+      "methodology": "Count of community health workers who completed the 6-month training program and received Ministry of Health certification",
+      "source": "Training program records and MoH certification database",
+      "type": "output"
+    },
+    {
+      "id": "clinics_supported",
+      "label": "Clinics Supported",
+      "fullName": "Primary Care Clinics Built or Supported (IRIS+ OI1120)",
+      "value": 8,
+      "unit": "clinics",
+      "target": 12,
+      "period": "H2 2025",
+      "values": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "methodology": "Count of operational primary care clinics receiving Umuganda investment in infrastructure, equipment, or staffing",
+      "source": "Facility audit reports",
+      "type": "output"
+    },
+    {
+      "id": "people_reached",
+      "label": "People Reached",
+      "fullName": "Unique individual patients served across all clinic locations",
+      "value": 9800,
+      "unit": "patients",
+      "target": 14000,
+      "period": "H2 2025",
+      "values": [
+        1200,
+        2500,
+        4200,
+        5800,
+        7900,
+        9800
+      ],
+      "methodology": "Unique patient count after deduplication across all facilities. Each patient counted once regardless of number of visits.",
+      "source": "Health Management Information System (HMIS)",
+      "type": "output"
+    },
+    {
+      "id": "households_reached",
+      "label": "Households Reached",
+      "fullName": "Estimated unique households represented by patient population",
+      "value": 6533,
+      "unit": "households",
+      "target": 9333,
+      "period": "H2 2025",
+      "values": [
+        800,
+        1667,
+        2800,
+        3867,
+        5267,
+        6533
+      ],
+      "methodology": "Derived from unique patients divided by average patients per household (1.5), based on household health survey data",
+      "source": "Patient intake records cross-referenced with household surveys",
+      "type": "output"
+    },
+    {
+      "id": "jobs_created",
+      "label": "Jobs Created",
+      "fullName": "Direct healthcare and support jobs created through Umuganda Health operations",
+      "value": 45,
+      "unit": "FTE jobs",
+      "target": 65,
+      "period": "H2 2025",
+      "values": [
+        12,
+        17,
+        23,
+        30,
+        37,
+        45
+      ],
+      "methodology": "Count of full-time equivalent clinical, community health, and administrative positions verified through payroll",
+      "source": "Company payroll records",
+      "type": "output"
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "maternal_mortality",
+      "label": "Maternal Mortality Reduction",
+      "fullName": "Reduction in Maternal Mortality Rate in Service Areas",
+      "value": 22,
+      "unit": "%",
+      "target": 35,
+      "period": "H2 2025",
+      "values": [
+        2,
+        4,
+        8,
+        12,
+        17,
+        22
+      ],
+      "methodology": "Comparison of maternal deaths per 100,000 live births in Umuganda catchment areas vs matched control districts without Umuganda facilities, using Rwanda HMIS data",
+      "source": "Rwanda Health Management Information System (HMIS)",
+      "type": "outcome"
+    },
+    {
+      "id": "cost_ratio",
+      "label": "Cost vs Private Clinics",
+      "fullName": "Average Consultation Cost as Ratio of Private Sector",
+      "value": 0.35,
+      "unit": "ratio",
+      "target": 0.3,
+      "period": "H2 2025",
+      "values": [
+        0.55,
+        0.5,
+        0.45,
+        0.42,
+        0.38,
+        0.35
+      ],
+      "methodology": "Mystery shopper surveys comparing standard consultation fees at 5 comparable private facilities in each service area",
+      "source": "Annual mystery shopper assessment",
+      "type": "outcome"
+    },
+    {
+      "id": "patient_satisfaction",
+      "label": "Patient Satisfaction",
+      "fullName": "Net Promoter Score (NPS) Among Patients",
+      "value": 61,
+      "unit": "NPS",
+      "target": 70,
+      "period": "H2 2025",
+      "values": [
+        42,
+        46,
+        50,
+        54,
+        59,
+        61
+      ],
+      "methodology": "Post-visit SMS surveys sent to patients 48 hours after visit, quarterly sample of n=200, NPS calculated as % Promoters minus % Detractors",
+      "source": "Quarterly patient satisfaction survey",
+      "type": "outcome"
+    },
+    {
+      "id": "women_pct",
+      "label": "Women Beneficiary %",
+      "fullName": "Percentage of total patients who are female",
+      "value": 68,
+      "unit": "%",
+      "target": 65,
+      "period": "H2 2025",
+      "values": [
+        62,
+        63,
+        65,
+        66,
+        67,
+        68
+      ],
+      "methodology": "Calculated from sex-disaggregated patient registration data",
+      "source": "HMIS patient demographic records",
+      "type": "outcome"
+    }
+  ],
+  "financials": [
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "fullName": "Semi-annual gross revenue from patient consultation fees, government health insurance reimbursements (CBHI/Mutuelle de Santé), and pharmaceutical dispensing revenue",
+      "value": 320,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [180, 205, 225, 250, 285, 320],
+      "methodology": "Gross revenue on accrual basis per IFRS 15. Includes patient consultation fees, government health insurance reimbursements (CBHI/Mutuelle de Santé), and pharmaceutical dispensing revenue.",
+      "source": "Audited financial statements and management accounts"
+    },
+    {
+      "id": "valuation",
+      "label": "Valuation",
+      "fullName": "Fair market value of the fund's equity position",
+      "value": 1995,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [1900, 1910, 1935, 1945, 1970, 1995],
+      "methodology": "Fair market value via DCF and comparable transactions.",
+      "source": "Independent valuation report and management estimate"
+    },
+    {
+      "id": "investment_amount",
+      "label": "Capital Deployed",
+      "fullName": "Total committed capital called and deployed",
+      "value": 1900,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [633, 1267, 1900, 1900, 1900, 1900],
+      "methodology": "Cumulative capital called from LPs.",
+      "source": "Fund administrator capital call records"
+    },
+    {
+      "id": "irr",
+      "label": "IRR",
+      "fullName": "Gross internal rate of return",
+      "value": 3.8,
+      "unit": "%",
+      "target": 15,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [-5.0, -2.1, 0.5, 1.8, 2.9, 3.8],
+      "methodology": "XIRR per GIPS standards.",
+      "source": "Fund administrator performance report"
+    },
+    {
+      "id": "moic",
+      "label": "MOIC",
+      "fullName": "Multiple on invested capital",
+      "value": 1.05,
+      "unit": "x",
+      "target": 2.0,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [1.00, 1.01, 1.02, 1.02, 1.04, 1.05],
+      "methodology": "MOIC = (FMV + Distributions) / Capital Called.",
+      "source": "Fund administrator performance report"
+    },
+    {
+      "id": "dpi",
+      "label": "DPI",
+      "fullName": "Distributions to paid-in capital",
+      "value": 0.00,
+      "unit": "x",
+      "target": 0.5,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [0.00, 0.00, 0.00, 0.00, 0.00, 0.00],
+      "methodology": "DPI = Distributions / Capital Called.",
+      "source": "Fund administrator distribution records"
+    },
+    {
+      "id": "revenue_growth",
+      "label": "Revenue Growth",
+      "fullName": "Year-over-year revenue growth rate",
+      "value": 28,
+      "unit": "%",
+      "target": 30,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [null, null, 25.0, 22.0, 26.7, 28.0],
+      "methodology": "YoY growth rate.",
+      "source": "Management accounts"
+    }
+  ],
+  "sdgAlignment": [
+    3,
+    5,
+    8,
+    1
+  ],
+  "scores": {
+    "financial": 2,
+    "impact": 3,
+    "operational": 2,
+    "esg": 4
+  },
+  "profile": {
+    "description": "Umuganda Health operates a network of digitally-enabled primary healthcare clinics in underserved districts of Rwanda. The company integrates telemedicine, electronic health records, and community health worker networks to deliver affordable, quality primary care and maternal health services.",
+    "theoryOfChange": "By establishing accessible, affordable primary healthcare clinics equipped with digital health tools, Umuganda improves health outcomes through early detection and treatment of common diseases, reduces maternal mortality through antenatal care coverage, and decreases the burden on tertiary hospitals. Community health workers extend reach into rural areas, enabling preventive care and health education.",
+    "tocImage": "/images/toc/umuganda-health.svg",
+    "tocLevels": [
+      { "label": "Inputs", "color": "#428BF9", "items": ["Investment Capital", "Medical Expertise", "Health Infrastructure"] },
+      { "label": "Activities", "color": "#034BE4", "items": ["Clinic Establishment", "Community Health Workers", "Telemedicine"] },
+      { "label": "Outputs", "color": "#FF9705", "items": ["Patients Treated", "CHWs Trained", "Teleconsultations"] },
+      { "label": "Outcomes", "color": "#3DD29D", "items": ["Health Access", "Reduced Mortality", "Prevention Coverage"] },
+      { "label": "Impact", "color": "#E05297", "items": ["Public Health", "Equity", "Sustainable Health Systems"] }
+    ],
+    "targetBeneficiaries": "Low-income populations in rural and peri-urban districts of Southern and Eastern Rwanda, with particular focus on pregnant women, children under 5, and elderly patients lacking access to quality primary care.",
+    "geographicFocus": "Southern Province (Huye, Nyanza, Gisagara) and Eastern Province (Ngoma, Kayonza). 12 operational clinics serving 45 sectors across 5 districts.",
+    "implementationApproach": "Hub-and-spoke model: 12 fixed clinics (hubs) supported by 120+ community health workers (spokes) who conduct household visits, referrals, and follow-ups. Telemedicine platform connects rural clinics with specialist physicians in Kigali.",
+    "reportingFrequency": "Semi-annual (H1/H2) impact assessments aligned with Rwanda Ministry of Health reporting cycles. Quarterly clinical quality audits by independent medical advisory board.",
+    "contactName": "Dr. Grace Uwimana",
+    "contactRole": "Medical Director & CEO",
+    "contactEmail": "g.uwimana@umugandahealth.rw"
+  }
+}

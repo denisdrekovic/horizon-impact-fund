@@ -1,0 +1,82 @@
+[
+  {
+    "portfolio": "smallholder-farmers",
+    "partner": "Sistema.bio",
+    "country": "India",
+    "intervention": "Biodigester",
+    "avgNetIncomeUpliftPerClient": 245,
+    "cumulativeClientTotal": 85000,
+    "cumulativeInvestment": 12500000,
+    "cumulativeROI": 1.67
+  },
+  {
+    "portfolio": "smallholder-farmers",
+    "partner": "S4S",
+    "country": "India",
+    "intervention": "Solar dryer",
+    "avgNetIncomeUpliftPerClient": 380,
+    "cumulativeClientTotal": 42000,
+    "cumulativeInvestment": 8200000,
+    "cumulativeROI": 1.95
+  },
+  {
+    "portfolio": "smallholder-farmers",
+    "partner": "Sunculture",
+    "country": "Kenya",
+    "intervention": "Solar irrigation",
+    "avgNetIncomeUpliftPerClient": 185,
+    "cumulativeClientTotal": 28000,
+    "cumulativeInvestment": 15000000,
+    "cumulativeROI": 0.35
+  },
+  {
+    "portfolio": "transporters",
+    "partner": "Ampersand",
+    "country": "Rwanda",
+    "intervention": "EV motorcycles",
+    "avgNetIncomeUpliftPerClient": 420,
+    "cumulativeClientTotal": 5200,
+    "cumulativeInvestment": 22000000,
+    "cumulativeROI": 0.10
+  },
+  {
+    "portfolio": "transporters",
+    "partner": "M-KOPA",
+    "country": "Kenya",
+    "intervention": "EV financing",
+    "avgNetIncomeUpliftPerClient": 310,
+    "cumulativeClientTotal": 15000,
+    "cumulativeInvestment": 18000000,
+    "cumulativeROI": 0.26
+  },
+  {
+    "portfolio": "transporters",
+    "partner": "SIDBI",
+    "country": "India",
+    "intervention": "EV lending",
+    "avgNetIncomeUpliftPerClient": 520,
+    "cumulativeClientTotal": 12000,
+    "cumulativeInvestment": 25000000,
+    "cumulativeROI": 0.25
+  },
+  {
+    "portfolio": "microentrepreneurs",
+    "partner": "Keep IT Cool",
+    "country": "Kenya",
+    "intervention": "Solar cold storage",
+    "avgNetIncomeUpliftPerClient": 290,
+    "cumulativeClientTotal": 3500,
+    "cumulativeInvestment": 4500000,
+    "cumulativeROI": 0.23
+  },
+  {
+    "portfolio": "microentrepreneurs",
+    "partner": "Odyssey",
+    "country": "Nigeria",
+    "intervention": "PUE platform",
+    "avgNetIncomeUpliftPerClient": 680,
+    "cumulativeClientTotal": 8500,
+    "cumulativeInvestment": 6000000,
+    "cumulativeROI": 0.96
+  }
+]

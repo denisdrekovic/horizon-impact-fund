@@ -1,0 +1,445 @@
+{
+  "id": "solvida-energy",
+  "name": "SolVida Energy",
+  "country": "Colombia",
+  "countryCode": "CO",
+  "sector": "clean-energy",
+  "sectorCategory": "climate-energy",
+  "coordinates": [
+    -74.07,
+    4.71
+  ],
+  "stage": "growth",
+  "status": "outperforming",
+  "investmentDate": "2023-01-15",
+  "investmentAmount": 4200000,
+  "capitalCalled": 4200000,
+  "currentValuation": 7140000,
+  "distributions": 420000,
+  "irr": 18.5,
+  "revenueGrowth": 51,
+  "timeSeries": {
+    "periods": [
+      "H1 2023",
+      "H2 2023",
+      "H1 2024",
+      "H2 2024",
+      "H1 2025",
+      "H2 2025"
+    ],
+    "revenue": [
+      1200,
+      1480,
+      1710,
+      2080,
+      2510,
+      3200
+    ],
+    "valuation": [
+      4200,
+      4550,
+      5100,
+      5680,
+      6280,
+      7140
+    ],
+    "peopleReached": [
+      4800,
+      7600,
+      12800,
+      17200,
+      24100,
+      28520
+    ],
+    "jobsCreated": [
+      45,
+      62,
+      88,
+      118,
+      149,
+      185
+    ],
+    "primaryOutcome": {
+      "label": "GHG Emissions Avoided (tCO2e)",
+      "values": [
+        1800,
+        3400,
+        5200,
+        7800,
+        10800,
+        12400
+      ],
+      "unit": "tCO2e",
+      "target": 15000
+    },
+    "secondaryOutcome": {
+      "label": "Households Electrified",
+      "values": [
+        850,
+        1480,
+        2550,
+        3800,
+        5400,
+        6200
+      ],
+      "unit": "households",
+      "target": 7000
+    }
+  },
+  "peopleReached": 28520,
+  "householdsReached": 6200,
+  "jobsCreated": 185,
+  "womenBeneficiaryPct": 52,
+  "co2Avoided": 12400,
+  "peopleReachedDefinition": "Estimated as households electrified (6,200) \u00d7 average household size of 4.6 persons, based on DANE 2022 Colombian census data. Counts direct beneficiaries who gained new or improved electricity access through SolVida installations.",
+  "householdsReachedDefinition": "Equal to the 'Households Electrified' output indicator (6,200) \u2014 one household counted per verified grid connection. Based on utility meter activation records.",
+  "jobsCreatedDefinition": "Full-time equivalent (FTE) jobs directly created by SolVida operations: 95 installation technicians, 52 maintenance and operations staff, 38 sales and administrative personnel. Verified through payroll records.",
+  "disaggregation": {
+    "peopleReached": {
+      "byRegion": [
+        {
+          "name": "Cundinamarca",
+          "female": 6406,
+          "male": 5914
+        },
+        {
+          "name": "Antioquia",
+          "female": 5096,
+          "male": 4704
+        },
+        {
+          "name": "Valle del Cauca",
+          "female": 3328,
+          "male": 3072
+        }
+      ]
+    },
+    "jobsCreated": {
+      "byType": [
+        {
+          "name": "Installation Technicians",
+          "female": 38,
+          "male": 57
+        },
+        {
+          "name": "Maintenance & Operations",
+          "female": 22,
+          "male": 30
+        },
+        {
+          "name": "Sales & Admin",
+          "female": 18,
+          "male": 20
+        }
+      ]
+    }
+  },
+  "outputs": [
+    {
+      "id": "energy_generated",
+      "label": "Clean Energy Generated",
+      "fullName": "Clean Energy Generated (Renewable Sources)",
+      "value": 18.5,
+      "unit": "GWh",
+      "target": 20,
+      "period": "H2 2025",
+      "values": [
+        2.1,
+        4.8,
+        7.9,
+        11.2,
+        15.0,
+        18.5
+      ],
+      "methodology": "Metered output from inverters, aggregated monthly",
+      "source": "SolVida operations monitoring system",
+      "type": "output"
+    },
+    {
+      "id": "households_electrified",
+      "label": "Households Electrified",
+      "fullName": "Households with New Electricity Access (IRIS+ PI2822)",
+      "value": 6200,
+      "unit": "households",
+      "target": 7000,
+      "period": "H2 2025",
+      "values": [
+        850,
+        1480,
+        2550,
+        3800,
+        5400,
+        6200
+      ],
+      "methodology": "Count of unique household connections verified by utility meter activation records",
+      "source": "Grid connection records and field verification",
+      "type": "output"
+    },
+    {
+      "id": "solar_capacity",
+      "label": "Solar Capacity Installed",
+      "fullName": "Solar Photovoltaic Capacity Installed",
+      "value": 12.4,
+      "unit": "MW",
+      "target": 15,
+      "period": "H2 2025",
+      "values": [
+        1.8,
+        3.5,
+        5.6,
+        7.8,
+        10.2,
+        12.4
+      ],
+      "methodology": "Sum of rated capacity of all commissioned solar PV systems",
+      "source": "Engineering commissioning reports",
+      "type": "output"
+    },
+    {
+      "id": "people_reached",
+      "label": "People Reached",
+      "fullName": "Total number of individuals in households with new or improved energy access",
+      "value": 28520,
+      "unit": "people",
+      "target": 32000,
+      "period": "H2 2025",
+      "values": [
+        4800,
+        7600,
+        12800,
+        17200,
+        24100,
+        28520
+      ],
+      "methodology": "Derived from households electrified multiplied by average household size of 4.6 persons per household (Colombia DANE census data)",
+      "source": "Project household survey and national census data",
+      "type": "output"
+    },
+    {
+      "id": "jobs_created",
+      "label": "Jobs Created",
+      "fullName": "Direct full-time equivalent jobs created through SolVida operations",
+      "value": 185,
+      "unit": "FTE jobs",
+      "target": 220,
+      "period": "H2 2025",
+      "values": [
+        45,
+        62,
+        88,
+        118,
+        149,
+        185
+      ],
+      "methodology": "Count of full-time equivalent positions created directly by the project, verified quarterly through payroll records",
+      "source": "Company payroll records and HR database",
+      "type": "output"
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "ghg_avoided",
+      "label": "GHG Emissions Avoided",
+      "fullName": "Greenhouse Gas Emissions Avoided (IRIS+ PI2764)",
+      "value": 12400,
+      "unit": "tCO2e",
+      "target": 15000,
+      "period": "H2 2025",
+      "values": [
+        1800,
+        3400,
+        5200,
+        7800,
+        10800,
+        12400
+      ],
+      "methodology": "GHG Protocol Scope 2 methodology using Colombia grid emission factors (0.126 tCO2/MWh, UPME 2024)",
+      "source": "Calculated from metered generation \u00d7 grid emission factor",
+      "type": "outcome"
+    },
+    {
+      "id": "energy_cost_savings",
+      "label": "Energy Cost Savings",
+      "fullName": "Average Energy Cost Reduction for End Users",
+      "value": 38,
+      "unit": "%",
+      "target": 40,
+      "period": "H2 2025",
+      "values": [
+        12,
+        18,
+        24,
+        29,
+        34,
+        38
+      ],
+      "methodology": "Comparison of average monthly energy bills pre/post installation across sample of 200 households",
+      "source": "Household billing surveys, semi-annual",
+      "type": "outcome"
+    },
+    {
+      "id": "diesel_displaced",
+      "label": "Diesel Generators Displaced",
+      "fullName": "Fossil Fuel Generators Replaced by Solar",
+      "value": 890,
+      "unit": "units",
+      "target": 1000,
+      "period": "H2 2025",
+      "values": [
+        120,
+        250,
+        410,
+        580,
+        750,
+        890
+      ],
+      "methodology": "Count of households that decommissioned diesel generators after solar installation, verified by field surveys",
+      "source": "Community field surveys and installation records",
+      "type": "outcome"
+    },
+    {
+      "id": "women_pct",
+      "label": "Women Beneficiary %",
+      "fullName": "Percentage of total beneficiaries who are female",
+      "value": 52,
+      "unit": "%",
+      "target": 50,
+      "period": "H2 2025",
+      "values": [
+        48,
+        49,
+        50,
+        51,
+        51,
+        52
+      ],
+      "methodology": "Calculated from sex-disaggregated beneficiary registration data",
+      "source": "Project beneficiary database",
+      "type": "outcome"
+    }
+  ],
+  "financials": [
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "fullName": "Semi-annual gross revenue from product sales and service fees",
+      "value": 3200,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [1200, 1480, 1710, 2080, 2510, 3200],
+      "methodology": "Gross revenue recognized on an accrual basis per IFRS 15, reported semi-annually. Includes revenue from solar home system sales, micro-grid connection fees, and PAYGO subscription payments.",
+      "source": "Audited financial statements and management accounts"
+    },
+    {
+      "id": "valuation",
+      "label": "Valuation",
+      "fullName": "Fair market value of the fund's equity position",
+      "value": 7140,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [4200, 4550, 5100, 5680, 6280, 7140],
+      "methodology": "Fair market value determined using a blend of discounted cash flow (DCF) analysis and comparable transactions methodology, reviewed quarterly by the fund's valuation committee.",
+      "source": "Independent valuation report (annual) and management estimate (interim)"
+    },
+    {
+      "id": "investment_amount",
+      "label": "Capital Deployed",
+      "fullName": "Total committed capital called and deployed into the investment",
+      "value": 4200,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [2100, 3360, 4200, 4200, 4200, 4200],
+      "methodology": "Cumulative capital called from limited partners per the subscription agreement. Capital calls issued as needed to fund investment activities.",
+      "source": "Fund administrator capital call records"
+    },
+    {
+      "id": "irr",
+      "label": "IRR",
+      "fullName": "Gross internal rate of return on invested capital",
+      "value": 18.5,
+      "unit": "%",
+      "target": 15,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [-5.0, 2.0, 8.0, 12.0, 16.0, 18.5],
+      "methodology": "Time-weighted gross IRR calculated using actual cash flows (capital calls, distributions) and the latest fair market value. Computed using the XIRR method per GIPS standards.",
+      "source": "Fund administrator performance report"
+    },
+    {
+      "id": "moic",
+      "label": "MOIC",
+      "fullName": "Multiple on invested capital (total value to paid-in)",
+      "value": 1.80,
+      "unit": "x",
+      "target": 2.0,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [1.00, 1.08, 1.21, 1.35, 1.55, 1.80],
+      "methodology": "MOIC = (Current Fair Market Value + Cumulative Distributions) / Total Capital Called. Measures total value creation relative to invested capital.",
+      "source": "Fund administrator performance report"
+    },
+    {
+      "id": "dpi",
+      "label": "DPI",
+      "fullName": "Distributions to paid-in capital ratio",
+      "value": 0.10,
+      "unit": "x",
+      "target": 0.5,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [0.00, 0.00, 0.00, 0.00, 0.05, 0.10],
+      "methodology": "DPI = Cumulative Distributions / Total Capital Called. Measures realized cash returns to investors.",
+      "source": "Fund administrator distribution records"
+    },
+    {
+      "id": "revenue_growth",
+      "label": "Revenue Growth",
+      "fullName": "Year-over-year revenue growth rate",
+      "value": 51,
+      "unit": "%",
+      "target": 30,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [0, 23, 43, 41, 47, 54],
+      "methodology": "Calculated as (Current Period Revenue - Prior Year Same Period Revenue) / Prior Year Same Period Revenue × 100. For periods without a prior year comparison, sequential half-over-half growth is reported.",
+      "source": "Management accounts"
+    }
+  ],
+  "sdgAlignment": [
+    7,
+    13,
+    8,
+    1
+  ],
+  "scores": {
+    "financial": 4,
+    "impact": 5,
+    "operational": 4,
+    "esg": 5
+  },
+  "profile": {
+    "description": "SolVida Energy provides affordable solar home systems, community micro-grids, and productive-use appliances to off-grid and underserved rural and peri-urban communities across Colombia. Operating primarily in the departments of Cundinamarca, Antioquia, and Valle del Cauca, the company uses a pay-as-you-go (PAYGO) model to reduce upfront cost barriers for low-income households and small enterprises.",
+    "theoryOfChange": "By providing affordable, clean energy access through solar home systems and mini-grids, SolVida reduces household expenditure on kerosene and diesel, improves indoor air quality, enables productive use of energy for small businesses, and reduces CO2 emissions. Increased energy access drives improvements in education (study hours), health (reduced respiratory illness), and economic activity.",
+    "tocImage": "/images/toc/solvida-energy.svg",
+    "tocLevels": [
+      { "label": "Inputs", "color": "#428BF9", "items": ["Investment Capital", "Technical Expertise", "Local Partnerships"] },
+      { "label": "Activities", "color": "#034BE4", "items": ["Solar Panel Installation", "Microgrid Development", "Technician Training"] },
+      { "label": "Outputs", "color": "#FF9705", "items": ["Systems Installed", "Grid Connections", "Technicians Trained"] },
+      { "label": "Outcomes", "color": "#3DD29D", "items": ["Households Electrified", "Energy Cost Savings", "Local Employment"] },
+      { "label": "Impact", "color": "#E05297", "items": ["Improved Livelihoods", "Climate Mitigation", "Gender Equality"] }
+    ],
+    "targetBeneficiaries": "Off-grid rural households, smallholder farming communities, and micro-enterprises in the Colombian departments of Cundinamarca, Antioquia, and Valle del Cauca, with emphasis on women-headed households and communities in non-interconnected zones (ZNI).",
+    "geographicFocus": "Departments of Cundinamarca (rural municipalities south and east of Bogota), Antioquia (sub-regions of Bajo Cauca and Uraba), and Valle del Cauca (Pacific coast and inland rural areas). Operations span 38 municipalities with 45 distribution points.",
+    "implementationApproach": "Direct-to-consumer PAYGO distribution through local sales agents across Colombian departments, supported by mobile payment integration (Nequi, Daviplata) and remote monitoring IoT technology for system performance tracking.",
+    "reportingFrequency": "Semi-annual (H1/H2), with quarterly operational dashboards shared with fund management.",
+    "contactName": "Amara Ochieng",
+    "contactRole": "CEO & Co-Founder",
+    "contactEmail": "a.ochieng@solvida-energy.com.co"
+  }
+}

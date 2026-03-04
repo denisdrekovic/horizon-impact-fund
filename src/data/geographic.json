@@ -1,0 +1,62 @@
+[
+  {
+    "investmentId": "solvida-energy",
+    "name": "SolVida Energy",
+    "country": "Colombia",
+    "sector": "clean-energy",
+    "sectorCategory": "climate-energy",
+    "coordinates": [-74.07, 4.71],
+    "investmentAmount": 4200000,
+    "status": "outperforming"
+  },
+  {
+    "investmentId": "kisantech",
+    "name": "KisanTech",
+    "country": "India",
+    "sector": "agritech",
+    "sectorCategory": "livelihoods",
+    "coordinates": [77.59, 12.97],
+    "investmentAmount": 3800000,
+    "status": "on-track"
+  },
+  {
+    "investmentId": "maji-solutions",
+    "name": "Maji Solutions",
+    "country": "Kenya",
+    "sector": "wash",
+    "sectorCategory": "essential-services",
+    "coordinates": [36.82, -1.29],
+    "investmentAmount": 2500000,
+    "status": "on-track"
+  },
+  {
+    "investmentId": "payforward",
+    "name": "PayForward",
+    "country": "Nigeria",
+    "sector": "financial-inclusion",
+    "sectorCategory": "livelihoods",
+    "coordinates": [3.39, 6.52],
+    "investmentAmount": 5100000,
+    "status": "outperforming"
+  },
+  {
+    "investmentId": "umuganda-health",
+    "name": "Umuganda Health",
+    "country": "Rwanda",
+    "sector": "healthcare",
+    "sectorCategory": "essential-services",
+    "coordinates": [29.87, -1.94],
+    "investmentAmount": 1900000,
+    "status": "needs-attention"
+  },
+  {
+    "investmentId": "skillbridge",
+    "name": "SkillBridge",
+    "country": "Vietnam",
+    "sector": "education",
+    "sectorCategory": "essential-services",
+    "coordinates": [106.66, 10.76],
+    "investmentAmount": 3000000,
+    "status": "on-track"
+  }
+]

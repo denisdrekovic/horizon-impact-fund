@@ -1,0 +1,445 @@
+{
+  "id": "payforward",
+  "name": "PayForward",
+  "country": "Nigeria",
+  "countryCode": "NG",
+  "sector": "financial-inclusion",
+  "sectorCategory": "livelihoods",
+  "coordinates": [
+    3.39,
+    6.52
+  ],
+  "stage": "growth",
+  "status": "outperforming",
+  "investmentDate": "2023-02-01",
+  "investmentAmount": 5100000,
+  "capitalCalled": 5100000,
+  "currentValuation": 9180000,
+  "distributions": 510000,
+  "irr": 22.4,
+  "revenueGrowth": 54,
+  "timeSeries": {
+    "periods": [
+      "H1 2023",
+      "H2 2023",
+      "H1 2024",
+      "H2 2024",
+      "H1 2025",
+      "H2 2025"
+    ],
+    "revenue": [
+      1800,
+      2280,
+      2950,
+      3720,
+      4650,
+      5600
+    ],
+    "valuation": [
+      5100,
+      5700,
+      6480,
+      7280,
+      8250,
+      9180
+    ],
+    "peopleReached": [
+      8500,
+      14100,
+      21600,
+      29800,
+      40500,
+      45800
+    ],
+    "jobsCreated": [
+      35,
+      54,
+      78,
+      108,
+      142,
+      178
+    ],
+    "primaryOutcome": {
+      "label": "Repayment Rate (%)",
+      "values": [
+        92.0,
+        92.8,
+        93.6,
+        94.5,
+        95.1,
+        95.5
+      ],
+      "unit": "%",
+      "target": 95
+    },
+    "secondaryOutcome": {
+      "label": "Household Income Increase (%)",
+      "values": [
+        6,
+        10,
+        16,
+        22,
+        29,
+        35
+      ],
+      "unit": "%",
+      "target": 30
+    }
+  },
+  "peopleReached": 45800,
+  "householdsReached": 32518,
+  "jobsCreated": 178,
+  "womenBeneficiaryPct": 62,
+  "co2Avoided": null,
+  "peopleReachedDefinition": "Direct count of unique individual clients served through PayForward lending and savings products. Equals the 'Total Clients Served' output indicator \u2014 each client counted once at first product access.",
+  "householdsReachedDefinition": "Estimated as approximately 71% of total clients served, based on household deduplication analysis. Multiple clients from the same household are counted once. Based on national ID cross-referencing.",
+  "jobsCreatedDefinition": "Full-time equivalent (FTE) jobs directly created by PayForward: 82 loan officers, 56 branch and back-office staff, 40 mobile banking agents. Verified through payroll and agent commission records.",
+  "disaggregation": {
+    "peopleReached": {
+      "byRegion": [
+        {
+          "name": "Lagos",
+          "female": 12276,
+          "male": 7524
+        },
+        {
+          "name": "Abuja FCT",
+          "female": 9052,
+          "male": 5548
+        },
+        {
+          "name": "Kano",
+          "female": 7068,
+          "male": 4332
+        }
+      ]
+    },
+    "jobsCreated": {
+      "byType": [
+        {
+          "name": "Loan Officers",
+          "female": 45,
+          "male": 37
+        },
+        {
+          "name": "Branch & Back-office",
+          "female": 31,
+          "male": 25
+        },
+        {
+          "name": "Mobile Banking Agents",
+          "female": 22,
+          "male": 18
+        }
+      ]
+    }
+  },
+  "outputs": [
+    {
+      "id": "clients_served",
+      "label": "Total Clients Served",
+      "fullName": "Total Individual Clients Served (IRIS+ PI4060)",
+      "value": 45800,
+      "unit": "clients",
+      "target": 50000,
+      "period": "H2 2025",
+      "values": [
+        8500,
+        14100,
+        21600,
+        29800,
+        40500,
+        45800
+      ],
+      "methodology": "Unique client accounts with at least one active loan or savings product, deduplicated by national ID",
+      "source": "Core banking system client registry",
+      "type": "output"
+    },
+    {
+      "id": "loans_disbursed",
+      "label": "Loans Disbursed",
+      "fullName": "Number of Micro and Small Loans Disbursed",
+      "value": 68500,
+      "unit": "loans",
+      "target": 75000,
+      "period": "H2 2025",
+      "values": [
+        8200,
+        18500,
+        31000,
+        44200,
+        58000,
+        68500
+      ],
+      "methodology": "Cumulative count of loans disbursed since fund inception (includes repeat borrowers)",
+      "source": "Loan management system",
+      "type": "output"
+    },
+    {
+      "id": "savings_accounts",
+      "label": "Savings Accounts Opened",
+      "fullName": "New Savings Accounts Opened (IRIS+ PI6439)",
+      "value": 31200,
+      "unit": "accounts",
+      "target": 35000,
+      "period": "H2 2025",
+      "values": [
+        3800,
+        8200,
+        14500,
+        20800,
+        27000,
+        31200
+      ],
+      "methodology": "Cumulative new savings accounts opened with minimum initial deposit since inception",
+      "source": "Core banking system",
+      "type": "output"
+    },
+    {
+      "id": "households_reached",
+      "label": "Households Reached",
+      "fullName": "Unique households with at least one active financial product",
+      "value": 32518,
+      "unit": "households",
+      "target": 35500,
+      "period": "H2 2025",
+      "values": [
+        6035,
+        10011,
+        15336,
+        21158,
+        28755,
+        32518
+      ],
+      "methodology": "Approximately 71% of individual clients represent unique households, based on household surveys",
+      "source": "Client database with household deduplication surveys",
+      "type": "output"
+    },
+    {
+      "id": "jobs_created",
+      "label": "Jobs Created",
+      "fullName": "Direct full-time equivalent jobs created through PayForward operations",
+      "value": 178,
+      "unit": "FTE jobs",
+      "target": 200,
+      "period": "H2 2025",
+      "values": [
+        35,
+        54,
+        78,
+        108,
+        142,
+        178
+      ],
+      "methodology": "Count of full-time equivalent positions, verified quarterly through payroll records",
+      "source": "Company payroll and HR records",
+      "type": "output"
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "repayment_rate",
+      "label": "Repayment Rate",
+      "fullName": "Loan Repayment Rate (On-Time or Within Grace Period)",
+      "value": 95.5,
+      "unit": "%",
+      "target": 95,
+      "period": "H2 2025",
+      "values": [
+        92.0,
+        92.8,
+        93.6,
+        94.5,
+        95.1,
+        95.5
+      ],
+      "methodology": "Portfolio at Risk (PAR30) methodology \u2014 percentage of outstanding loans with no payments more than 30 days overdue",
+      "source": "Monthly portfolio quality reports",
+      "type": "outcome"
+    },
+    {
+      "id": "income_increase",
+      "label": "Household Income Increase",
+      "fullName": "Average Household Income Increase Among Active Borrowers",
+      "value": 35,
+      "unit": "%",
+      "target": 30,
+      "period": "H2 2025",
+      "values": [
+        6,
+        10,
+        16,
+        22,
+        29,
+        35
+      ],
+      "methodology": "Lean Data phone surveys using I4DI Living Income methodology, comparing income at loan application vs 12 months post-disbursement (n=500)",
+      "source": "Semi-annual Lean Data survey",
+      "type": "outcome"
+    },
+    {
+      "id": "financial_resilience",
+      "label": "Financial Resilience",
+      "fullName": "Clients Able to Cover Unexpected Expense Without Borrowing",
+      "value": 48,
+      "unit": "%",
+      "target": 55,
+      "period": "H2 2025",
+      "values": [
+        22,
+        28,
+        33,
+        38,
+        44,
+        48
+      ],
+      "methodology": "Annual resilience survey adapted from FinScope toolkit \u2014 measures ability to cover a 50,000 NGN unexpected expense within 30 days without new borrowing",
+      "source": "Annual client resilience survey (n=800)",
+      "type": "outcome"
+    },
+    {
+      "id": "women_pct",
+      "label": "Women Beneficiary %",
+      "fullName": "Percentage of total clients who are female",
+      "value": 62,
+      "unit": "%",
+      "target": 60,
+      "period": "H2 2025",
+      "values": [
+        56,
+        57,
+        59,
+        60,
+        61,
+        62
+      ],
+      "methodology": "Calculated from sex-disaggregated client registration data",
+      "source": "Core banking system",
+      "type": "outcome"
+    }
+  ],
+  "financials": [
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "fullName": "Semi-annual gross revenue from loan interest income, transaction fees, and premium service subscriptions",
+      "value": 5600,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [1800, 2280, 2950, 3720, 4650, 5600],
+      "methodology": "Gross revenue on accrual basis per IFRS 15. Includes loan interest income on outstanding micro and small loan portfolio, transaction fees from mobile money and agent cash-in/cash-out, and premium service subscription fees.",
+      "source": "Audited financial statements and management accounts"
+    },
+    {
+      "id": "valuation",
+      "label": "Valuation",
+      "fullName": "Fair market value of the fund's equity position",
+      "value": 9180,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [5100, 5700, 6480, 7280, 8250, 9180],
+      "methodology": "Fair market value via DCF and comparable transactions.",
+      "source": "Independent valuation report and management estimate"
+    },
+    {
+      "id": "investment_amount",
+      "label": "Capital Deployed",
+      "fullName": "Total committed capital called and deployed",
+      "value": 5100,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [1700, 3400, 5100, 5100, 5100, 5100],
+      "methodology": "Cumulative capital called from LPs.",
+      "source": "Fund administrator capital call records"
+    },
+    {
+      "id": "irr",
+      "label": "IRR",
+      "fullName": "Gross internal rate of return",
+      "value": 22.4,
+      "unit": "%",
+      "target": 15,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [0.0, 5.8, 11.2, 15.6, 19.5, 22.4],
+      "methodology": "XIRR per GIPS standards.",
+      "source": "Fund administrator performance report"
+    },
+    {
+      "id": "moic",
+      "label": "MOIC",
+      "fullName": "Multiple on invested capital",
+      "value": 1.90,
+      "unit": "x",
+      "target": 2.0,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [1.00, 1.12, 1.27, 1.43, 1.62, 1.90],
+      "methodology": "MOIC = (FMV + Distributions) / Capital Called.",
+      "source": "Fund administrator performance report"
+    },
+    {
+      "id": "dpi",
+      "label": "DPI",
+      "fullName": "Distributions to paid-in capital",
+      "value": 0.10,
+      "unit": "x",
+      "target": 0.5,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [0.00, 0.00, 0.00, 0.00, 0.05, 0.10],
+      "methodology": "DPI = Distributions / Capital Called.",
+      "source": "Fund administrator distribution records"
+    },
+    {
+      "id": "revenue_growth",
+      "label": "Revenue Growth",
+      "fullName": "Year-over-year revenue growth rate",
+      "value": 54,
+      "unit": "%",
+      "target": 30,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [null, null, 64, 63, 58, 51],
+      "methodology": "YoY growth rate.",
+      "source": "Management accounts"
+    }
+  ],
+  "sdgAlignment": [
+    1,
+    8,
+    5,
+    10
+  ],
+  "scores": {
+    "financial": 5,
+    "impact": 4,
+    "operational": 5,
+    "esg": 4
+  },
+  "profile": {
+    "description": "PayForward is a digital financial services platform providing microloans, savings products, and insurance to underserved populations in Nigeria. The platform uses alternative credit scoring powered by mobile usage data and transaction history to serve customers excluded from traditional banking.",
+    "theoryOfChange": "By providing affordable, accessible digital financial services to unbanked and underbanked populations, PayForward enables household financial resilience, supports micro-enterprise growth, and reduces vulnerability to economic shocks. Access to savings and insurance products builds long-term financial security, while microcredit enables productive investment in education, health, and small business development.",
+    "tocImage": "/images/toc/payforward.svg",
+    "tocLevels": [
+      { "label": "Inputs", "color": "#428BF9", "items": ["Investment Capital", "Fintech Infrastructure", "Agent Network"] },
+      { "label": "Activities", "color": "#034BE4", "items": ["Mobile Wallet Platform", "Agent Training", "SME Lending"] },
+      { "label": "Outputs", "color": "#FF9705", "items": ["Accounts Created", "Agents Deployed", "Loans Disbursed"] },
+      { "label": "Outcomes", "color": "#3DD29D", "items": ["Financial Access", "Business Growth", "Savings Behavior"] },
+      { "label": "Impact", "color": "#E05297", "items": ["Economic Inclusion", "Poverty Reduction", "Gender Equality"] }
+    ],
+    "targetBeneficiaries": "Unbanked and underbanked adults in urban and peri-urban Nigeria, including market traders, gig workers, and smallholder farmers. Minimum 45% women borrowers target.",
+    "geographicFocus": "Lagos, Ogun, Oyo, Kano, and Rivers states. Concentrated in urban corridors with expansion into secondary cities. Agent network covers 24 local government areas.",
+    "implementationApproach": "Fully digital lending platform with USSD and mobile app channels. Agent banking network for cash-in/cash-out. AI-driven credit scoring using alternative data (mobile money transactions, utility payments, social network analysis).",
+    "reportingFrequency": "Semi-annual (H1/H2) impact reports. Monthly financial reporting to fund management. Quarterly portfolio-at-risk reporting.",
+    "contactName": "Chinwe Eze",
+    "contactRole": "CEO & Co-Founder",
+    "contactEmail": "chinwe.eze@payforward.ng"
+  }
+}

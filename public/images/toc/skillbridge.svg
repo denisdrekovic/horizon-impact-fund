@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Column Headers -->
+  <rect x="20" y="18" width="130" height="32" rx="16" fill="#428BF9"/>
+  <text x="85" y="39" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#fff" letter-spacing="1">INPUTS</text>
+
+  <rect x="176" y="18" width="130" height="32" rx="16" fill="#034BE4"/>
+  <text x="241" y="39" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#fff" letter-spacing="1">ACTIVITIES</text>
+
+  <rect x="332" y="18" width="130" height="32" rx="16" fill="#FF9705"/>
+  <text x="397" y="39" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#fff" letter-spacing="1">OUTPUTS</text>
+
+  <rect x="488" y="18" width="130" height="32" rx="16" fill="#3DD29D"/>
+  <text x="553" y="39" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#fff" letter-spacing="1">OUTCOMES</text>
+
+  <rect x="644" y="18" width="130" height="32" rx="16" fill="#E05297"/>
+  <text x="709" y="39" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#fff" letter-spacing="1">IMPACT</text>
+
+  <!-- Arrows between columns -->
+  <line x1="150" y1="200" x2="176" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="306" y1="200" x2="332" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="462" y1="200" x2="488" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="618" y1="200" x2="644" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- INPUTS Column -->
+  <rect x="20" y="70" width="130" height="68" rx="10" fill="rgba(66,139,249,0.1)" stroke="#428BF9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="85" y="100" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Investment</text>
+  <text x="85" y="118" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Capital</text>
+
+  <rect x="20" y="152" width="130" height="68" rx="10" fill="rgba(66,139,249,0.1)" stroke="#428BF9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="85" y="182" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Curriculum</text>
+  <text x="85" y="200" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Design</text>
+
+  <rect x="20" y="234" width="130" height="68" rx="10" fill="rgba(66,139,249,0.1)" stroke="#428BF9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="85" y="264" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Industry</text>
+  <text x="85" y="282" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Partnerships</text>
+
+  <!-- ACTIVITIES Column -->
+  <rect x="176" y="70" width="130" height="68" rx="10" fill="rgba(3,75,228,0.1)" stroke="#034BE4" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="241" y="100" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Training</text>
+  <text x="241" y="118" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Programs</text>
+
+  <rect x="176" y="152" width="130" height="68" rx="10" fill="rgba(3,75,228,0.1)" stroke="#034BE4" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="241" y="182" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Digital</text>
+  <text x="241" y="200" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Platforms</text>
+
+  <rect x="176" y="234" width="130" height="68" rx="10" fill="rgba(3,75,228,0.1)" stroke="#034BE4" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="241" y="264" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Job</text>
+  <text x="241" y="282" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Placement</text>
+
+  <!-- OUTPUTS Column -->
+  <rect x="332" y="70" width="130" height="68" rx="10" fill="rgba(255,151,5,0.12)" stroke="#FF9705" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="397" y="100" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Students</text>
+  <text x="397" y="118" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Enrolled</text>
+
+  <rect x="332" y="152" width="130" height="68" rx="10" fill="rgba(255,151,5,0.12)" stroke="#FF9705" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="397" y="182" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Courses</text>
+  <text x="397" y="200" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Completed</text>
+
+  <rect x="332" y="234" width="130" height="68" rx="10" fill="rgba(255,151,5,0.12)" stroke="#FF9705" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="397" y="264" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Placements</text>
+  <text x="397" y="282" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Made</text>
+
+  <!-- OUTCOMES Column -->
+  <rect x="488" y="70" width="130" height="68" rx="10" fill="rgba(61,210,157,0.12)" stroke="#3DD29D" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="553" y="100" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Employment</text>
+  <text x="553" y="118" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Rate</text>
+
+  <rect x="488" y="152" width="130" height="68" rx="10" fill="rgba(61,210,157,0.12)" stroke="#3DD29D" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="553" y="182" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Income</text>
+  <text x="553" y="200" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Increase</text>
+
+  <rect x="488" y="234" width="130" height="68" rx="10" fill="rgba(61,210,157,0.12)" stroke="#3DD29D" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="553" y="264" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Skills</text>
+  <text x="553" y="282" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Certification</text>
+
+  <!-- IMPACT Column -->
+  <rect x="644" y="70" width="130" height="68" rx="10" fill="rgba(224,82,151,0.12)" stroke="#E05297" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="709" y="100" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Economic</text>
+  <text x="709" y="118" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Mobility</text>
+
+  <rect x="644" y="152" width="130" height="68" rx="10" fill="rgba(224,82,151,0.12)" stroke="#E05297" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="709" y="182" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Reduced</text>
+  <text x="709" y="200" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Inequality</text>
+
+  <rect x="644" y="234" width="130" height="68" rx="10" fill="rgba(224,82,151,0.12)" stroke="#E05297" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="709" y="264" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Workforce</text>
+  <text x="709" y="282" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#4a5568">Development</text>
+
+  <!-- Connecting lines from boxes to arrows -->
+  <line x1="150" y1="104" x2="160" y2="104" stroke="#428BF9" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="160" y1="104" x2="160" y2="200" stroke="#94a3b8" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="150" y1="268" x2="160" y2="268" stroke="#428BF9" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="160" y1="268" x2="160" y2="200" stroke="#94a3b8" stroke-width="1" stroke-opacity="0.3"/>
+
+  <line x1="306" y1="104" x2="316" y2="104" stroke="#034BE4" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="316" y1="104" x2="316" y2="200" stroke="#94a3b8" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="306" y1="268" x2="316" y2="268" stroke="#034BE4" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="316" y1="268" x2="316" y2="200" stroke="#94a3b8" stroke-width="1" stroke-opacity="0.3"/>
+
+  <line x1="462" y1="104" x2="472" y2="104" stroke="#FF9705" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="472" y1="104" x2="472" y2="200" stroke="#94a3b8" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="462" y1="268" x2="472" y2="268" stroke="#FF9705" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="472" y1="268" x2="472" y2="200" stroke="#94a3b8" stroke-width="1" stroke-opacity="0.3"/>
+
+  <line x1="618" y1="104" x2="628" y2="104" stroke="#3DD29D" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="628" y1="104" x2="628" y2="200" stroke="#94a3b8" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="618" y1="268" x2="628" y2="268" stroke="#3DD29D" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="628" y1="268" x2="628" y2="200" stroke="#94a3b8" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- Subtle bottom label -->
+  <text x="400" y="330" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="10" fill="#6b7280" font-style="italic">SkillBridge — Theory of Change</text>
+</svg>

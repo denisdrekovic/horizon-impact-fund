@@ -1,0 +1,24 @@
+{
+  "heroStat": {
+    "achieved": 7,
+    "total": 9,
+    "threshold": "20%",
+    "metric": "median net income uplift"
+  },
+  "categories": [
+    { "id": "microentrepreneurs", "label": "Microentrepreneurs", "achieved": 2, "total": 2, "icon": "store" },
+    { "id": "smallholder-farmers", "label": "Smallholder Farmers", "achieved": 3, "total": 4, "icon": "sprout" },
+    { "id": "transporters", "label": "Transporters", "achieved": 2, "total": 3, "icon": "truck" }
+  ],
+  "aggregateQualityOfLife": [
+    { "question": "Cover all essential food & housing expenses", "stronglyAgree": 22, "agree": 48, "disagree": 20, "stronglyDisagree": 10 },
+    { "question": "Cover all essential health & education expenses", "stronglyAgree": 18, "agree": 45, "disagree": 25, "stronglyDisagree": 12 },
+    { "question": "Have enough of our preferred foods year round", "stronglyAgree": 15, "agree": 42, "disagree": 28, "stronglyDisagree": 15 }
+  ],
+  "aggregateResilience": [
+    { "label": "Without any difficulty", "value": 47.7, "color": "#00A17D" },
+    { "label": "With some difficulty", "value": 22.4, "color": "#2A1055" },
+    { "label": "With great difficulty", "value": 19.4, "color": "#FFC000" },
+    { "label": "Could not manage at all", "value": 10.5, "color": "#910D63" }
+  ]
+}

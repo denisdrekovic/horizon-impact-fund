@@ -1,0 +1,466 @@
+{
+  "id": "kisantech",
+  "name": "KisanTech",
+  "country": "India",
+  "countryCode": "IN",
+  "sector": "agritech",
+  "sectorCategory": "livelihoods",
+  "coordinates": [
+    77.59,
+    12.97
+  ],
+  "stage": "series-a",
+  "status": "on-track",
+  "investmentDate": "2023-04-01",
+  "investmentAmount": 3800000,
+  "capitalCalled": 3800000,
+  "currentValuation": 5320000,
+  "distributions": 0,
+  "irr": 14.2,
+  "revenueGrowth": 56,
+  "timeSeries": {
+    "periods": [
+      "H1 2023",
+      "H2 2023",
+      "H1 2024",
+      "H2 2024",
+      "H1 2025",
+      "H2 2025"
+    ],
+    "revenue": [
+      680,
+      790,
+      1020,
+      1180,
+      1540,
+      1900
+    ],
+    "valuation": [
+      3800,
+      4050,
+      4420,
+      4680,
+      5050,
+      5320
+    ],
+    "peopleReached": [
+      6200,
+      10400,
+      17200,
+      23800,
+      32600,
+      37800
+    ],
+    "jobsCreated": [
+      13,
+      20,
+      30,
+      40,
+      50,
+      65
+    ],
+    "primaryOutcome": {
+      "label": "Average Crop Yield Improvement (%)",
+      "values": [
+        8,
+        12,
+        18,
+        22,
+        29,
+        32
+      ],
+      "unit": "%",
+      "target": 35
+    },
+    "secondaryOutcome": {
+      "label": "Farmer Income Increase (%)",
+      "values": [
+        5,
+        8,
+        14,
+        18,
+        25,
+        28
+      ],
+      "unit": "%",
+      "target": 30
+    }
+  },
+  "peopleReached": 37800,
+  "householdsReached": 8400,
+  "jobsCreated": 65,
+  "womenBeneficiaryPct": 41,
+  "co2Avoided": 3200,
+  "peopleReachedDefinition": "Estimated as smallholder farmers served (8,400) × average household size of 4.5 persons, based on India NSS 2021 rural household data. Includes farming household members who directly benefit from improved yields and income.",
+  "householdsReachedDefinition": "Equal to the 'Smallholder Farmers Served' output indicator (8,400). Each farmer represents one household. Based on unique farmer account registrations.",
+  "jobsCreatedDefinition": "Full-time equivalent (FTE) jobs directly created by KisanTech operations: 30 field agents, 20 tech and data analysts, 15 operations and administrative staff. Verified through payroll and contractor records.",
+  "disaggregation": {
+    "peopleReached": {
+      "byRegion": [
+        {
+          "name": "Karnataka",
+          "female": 6573,
+          "male": 9458
+        },
+        {
+          "name": "Maharashtra",
+          "female": 5193,
+          "male": 7473
+        },
+        {
+          "name": "Andhra Pradesh",
+          "female": 3733,
+          "male": 5370
+        }
+      ]
+    },
+    "jobsCreated": {
+      "byType": [
+        {
+          "name": "Field Agents",
+          "female": 11,
+          "male": 19
+        },
+        {
+          "name": "Tech & Data",
+          "female": 7,
+          "male": 13
+        },
+        {
+          "name": "Operations & Admin",
+          "female": 5,
+          "male": 10
+        }
+      ]
+    }
+  },
+  "outputs": [
+    {
+      "id": "farmers_served",
+      "label": "Smallholder Farmers Served",
+      "fullName": "Smallholder Farmers Receiving Advisory Services (IRIS+ PI4060)",
+      "value": 8400,
+      "unit": "farmers",
+      "target": 10000,
+      "period": "H2 2025",
+      "values": [
+        1200,
+        2400,
+        4100,
+        5600,
+        7200,
+        8400
+      ],
+      "methodology": "Unique farmer accounts with at least one advisory session in the reporting period",
+      "source": "KisanTech platform analytics",
+      "type": "output"
+    },
+    {
+      "id": "hectares_managed",
+      "label": "Hectares Under Management",
+      "fullName": "Agricultural Land Under Precision Management",
+      "value": 14200,
+      "unit": "hectares",
+      "target": 18000,
+      "period": "H2 2025",
+      "values": [
+        1800,
+        3600,
+        6200,
+        8800,
+        11600,
+        14200
+      ],
+      "methodology": "Sum of georeferenced farm plots registered on the platform and receiving active advisory",
+      "source": "GIS mapping and farmer registration data",
+      "type": "output"
+    },
+    {
+      "id": "advisory_sessions",
+      "label": "Crop Advisory Sessions",
+      "fullName": "AI-Powered Crop Advisory Sessions Delivered",
+      "value": 52000,
+      "unit": "sessions",
+      "target": 60000,
+      "period": "H2 2025",
+      "values": [
+        4500,
+        11000,
+        21000,
+        32000,
+        43000,
+        52000
+      ],
+      "methodology": "Cumulative count of completed advisory sessions (mobile app + SMS) since fund inception",
+      "source": "Platform session logs",
+      "type": "output"
+    },
+    {
+      "id": "people_reached",
+      "label": "People Reached",
+      "fullName": "Total individuals in smallholder farming households served by KisanTech platform",
+      "value": 37800,
+      "unit": "people",
+      "target": 45000,
+      "period": "H2 2025",
+      "type": "output",
+      "values": [
+        6200,
+        10400,
+        17200,
+        23800,
+        32600,
+        37800
+      ],
+      "methodology": "Derived from registered farmers multiplied by average household size of 4.5 persons (India National Family Health Survey data)",
+      "source": "Platform registration data and NFHS survey"
+    },
+    {
+      "id": "jobs_created",
+      "label": "Jobs Created",
+      "fullName": "Direct full-time equivalent jobs created through KisanTech operations",
+      "value": 65,
+      "unit": "FTE jobs",
+      "target": 80,
+      "period": "H2 2025",
+      "type": "output",
+      "values": [
+        13,
+        20,
+        30,
+        40,
+        50,
+        65
+      ],
+      "methodology": "Count of full-time equivalent positions created directly by the company, verified quarterly through payroll records",
+      "source": "Company payroll and HR records"
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "yield_improvement",
+      "label": "Crop Yield Improvement",
+      "fullName": "Average Crop Yield Improvement vs Baseline",
+      "value": 32,
+      "unit": "%",
+      "target": 35,
+      "period": "H2 2025",
+      "values": [
+        8,
+        12,
+        18,
+        22,
+        29,
+        32
+      ],
+      "methodology": "Comparison of yield per hectare at baseline (pre-enrollment) vs current season across matched sample of 500 farmers",
+      "source": "Crop cutting experiments and self-reported yields",
+      "type": "outcome"
+    },
+    {
+      "id": "farmer_income",
+      "label": "Farmer Income Increase",
+      "fullName": "Average Farmer Household Income Increase",
+      "value": 28,
+      "unit": "%",
+      "target": 30,
+      "period": "H2 2025",
+      "values": [
+        5,
+        8,
+        14,
+        18,
+        25,
+        28
+      ],
+      "methodology": "Self-reported income surveys (n=500), validated against crop sales records from aggregators",
+      "source": "Semi-annual household income surveys",
+      "type": "outcome"
+    },
+    {
+      "id": "post_harvest_loss",
+      "label": "Post-Harvest Loss Reduction",
+      "fullName": "Reduction in Post-Harvest Crop Loss",
+      "value": 22,
+      "unit": "%",
+      "target": 25,
+      "period": "H2 2025",
+      "values": [
+        4,
+        7,
+        11,
+        15,
+        19,
+        22
+      ],
+      "methodology": "Measured weight loss between harvest and market sale, compared to baseline assessment at enrollment",
+      "source": "Random sample weighing at farm gate and market (n=300)",
+      "type": "outcome"
+    },
+    {
+      "id": "co2_avoided",
+      "label": "CO\u2082 Avoided",
+      "fullName": "Estimated carbon dioxide emissions avoided through improved agricultural practices",
+      "value": 3200,
+      "unit": "tCO\u2082e",
+      "target": 5000,
+      "period": "H2 2025",
+      "type": "outcome",
+      "values": [
+        400,
+        850,
+        1350,
+        1900,
+        2600,
+        3200
+      ],
+      "methodology": "Estimated using IPCC Tier 1 emission factors for reduced synthetic fertilizer use, improved water management, and decreased post-harvest losses. Baseline emissions established from pre-intervention farming practices.",
+      "source": "Project M&E system with IPCC emission factor calculations"
+    },
+    {
+      "id": "women_pct",
+      "label": "Women Beneficiary %",
+      "fullName": "Percentage of total beneficiaries who are female",
+      "value": 41,
+      "unit": "%",
+      "target": 45,
+      "period": "H2 2025",
+      "type": "outcome",
+      "values": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "methodology": "Calculated from sex-disaggregated farmer registration data on the KisanTech platform",
+      "source": "Platform registration database"
+    }
+  ],
+  "financials": [
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "fullName": "Semi-annual gross revenue from platform subscriptions and advisory services",
+      "value": 1900,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [680, 790, 1020, 1180, 1540, 1900],
+      "methodology": "Gross revenue on accrual basis per IFRS 15. Includes platform subscription fees, premium advisory service revenue, and data analytics licensing.",
+      "source": "Audited financial statements and management accounts"
+    },
+    {
+      "id": "valuation",
+      "label": "Valuation",
+      "fullName": "Fair market value of the fund's equity position",
+      "value": 5320,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [3800, 4050, 4420, 4680, 5050, 5320],
+      "methodology": "Fair market value via DCF and comparable transactions, reviewed quarterly by valuation committee.",
+      "source": "Independent valuation report and management estimate"
+    },
+    {
+      "id": "investment_amount",
+      "label": "Capital Deployed",
+      "fullName": "Total committed capital called and deployed",
+      "value": 3800,
+      "unit": "$K",
+      "target": null,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [1200, 2600, 3800, 3800, 3800, 3800],
+      "methodology": "Cumulative capital called from LPs per subscription agreement.",
+      "source": "Fund administrator capital call records"
+    },
+    {
+      "id": "irr",
+      "label": "IRR",
+      "fullName": "Gross internal rate of return on invested capital",
+      "value": 14.2,
+      "unit": "%",
+      "target": 15,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [-8.5, -2.1, 3.8, 7.6, 11.4, 14.2],
+      "methodology": "Time-weighted gross IRR via XIRR method per GIPS standards.",
+      "source": "Fund administrator performance report"
+    },
+    {
+      "id": "moic",
+      "label": "MOIC",
+      "fullName": "Multiple on invested capital",
+      "value": 1.4,
+      "unit": "x",
+      "target": 2.0,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [1.0, 1.07, 1.16, 1.23, 1.33, 1.4],
+      "methodology": "MOIC = (FMV + Cumulative Distributions) / Capital Called.",
+      "source": "Fund administrator performance report"
+    },
+    {
+      "id": "dpi",
+      "label": "DPI",
+      "fullName": "Distributions to paid-in capital",
+      "value": 0.0,
+      "unit": "x",
+      "target": 0.5,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [0, 0, 0, 0, 0, 0],
+      "methodology": "DPI = Cumulative Distributions / Capital Called.",
+      "source": "Fund administrator distribution records"
+    },
+    {
+      "id": "revenue_growth",
+      "label": "Revenue Growth",
+      "fullName": "Year-over-year revenue growth rate",
+      "value": 56,
+      "unit": "%",
+      "target": 30,
+      "period": "H2 2025",
+      "type": "financial",
+      "values": [0, 16, 50, 49, 51, 61],
+      "methodology": "YoY revenue growth = (Current - Prior Year Same Period) / Prior Year \u00d7 100.",
+      "source": "Management accounts"
+    }
+  ],
+  "sdgAlignment": [
+    2,
+    1,
+    8,
+    13,
+    5
+  ],
+  "scores": {
+    "financial": 3,
+    "impact": 4,
+    "operational": 4,
+    "esg": 4
+  },
+  "profile": {
+    "description": "KisanTech delivers AI-powered crop advisory services and precision agriculture tools to smallholder farmers across South India. The platform combines satellite imagery, soil sensors, and local weather data to provide actionable recommendations via mobile app and SMS.",
+    "theoryOfChange": "By providing smallholder farmers with precision agriculture tools and real-time advisory services, KisanTech improves crop yields, reduces post-harvest losses, and increases farmer incomes. Better farming practices also reduce input costs (fertilizer, pesticide) and promote sustainable land management, contributing to food security and climate resilience.",
+    "tocImage": "/images/toc/kisantech.svg",
+    "tocLevels": [
+      { "label": "Inputs", "color": "#428BF9", "items": ["Investment Capital", "AgriTech R&D", "Farmer Networks"] },
+      { "label": "Activities", "color": "#034BE4", "items": ["Mobile Platform Development", "Extension Services", "Market Linkages"] },
+      { "label": "Outputs", "color": "#FF9705", "items": ["Farmers Onboarded", "Advisory Sessions", "Market Connections"] },
+      { "label": "Outcomes", "color": "#3DD29D", "items": ["Yield Increase", "Income Growth", "Reduced Post-Harvest Loss"] },
+      { "label": "Impact", "color": "#E05297", "items": ["Food Security", "Poverty Reduction", "Sustainable Agriculture"] }
+    ],
+    "targetBeneficiaries": "Smallholder farmers (1-5 hectare landholdings) in semi-arid and rain-fed agricultural zones of Karnataka, Maharashtra, and Andhra Pradesh, with a focus on women farmers and farmer producer organizations.",
+    "geographicFocus": "South India — Karnataka (Dharwad, Belgaum), Maharashtra (Nashik, Aurangabad), and Andhra Pradesh (Anantapur, Kurnool). Active in 8 districts across 3 states.",
+    "implementationApproach": "B2B2C model working through farmer producer organizations (FPOs) and agri-input dealers. Field agents provide on-ground training, while the platform delivers personalized crop advisories through a multilingual mobile app.",
+    "reportingFrequency": "Semi-annual (H1/H2), aligned with Kharif and Rabi cropping seasons. Quarterly data quality reviews with third-party agricultural economists.",
+    "contactName": "Priya Sharma",
+    "contactRole": "Managing Director",
+    "contactEmail": "priya.sharma@kisantech.in"
+  }
+}
