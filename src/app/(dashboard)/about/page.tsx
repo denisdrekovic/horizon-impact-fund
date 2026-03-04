@@ -110,10 +110,10 @@ export default function AboutPage() {
 
         <div className="flex items-center gap-4">
           <Image
-            src="/idi-logo.svg"
+            src="/i4di-logo.png"
             alt="Institute for Development Impact"
-            width={160}
-            height={40}
+            width={200}
+            height={56}
             style={{ height: "auto" }}
           />
           <div>
@@ -124,10 +124,15 @@ export default function AboutPage() {
               Built by the Institute for Development Impact (I4DI)
             </p>
             <p
-              className="text-xs"
+              className="text-xs leading-relaxed"
               style={{ color: "var(--text-tertiary)" }}
             >
-              Data systems, impact measurement, and analytics for international development.
+              I4DI is a think + do tank working at the intersection of social and
+              environmental impact — blending strategic analysis and evidence generation
+              with hands-on implementation and problem solving. We connect research and
+              evaluation to real-world practice, working alongside our partners to design,
+              test, and scale solutions grounded in rigorous evidence, powered by
+              technology, and tailored to the communities we serve.
             </p>
           </div>
         </div>
