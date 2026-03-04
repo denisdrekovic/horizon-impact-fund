@@ -11,7 +11,7 @@ interface UserEntry {
 
 
 function parseUsers(): Map<string, UserEntry> {
-  const raw = process.env.AUTH_USERS ?? "";
+  const raw = process.env.AUTH_USERS || "admin:horizon2025,viewer:dashboard2025";
   const map = new Map<string, UserEntry>();
   for (const pair of raw.split(",")) {
     const sep = pair.indexOf(":");
